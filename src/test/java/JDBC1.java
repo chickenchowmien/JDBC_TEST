@@ -1,5 +1,3 @@
-package com.jdbc.tests;
-
 import org.testng.annotations.Test;
 
 
@@ -27,7 +25,7 @@ public class JDBC1 {
 
 
 
-   @Test
+  // @Test
     public void oracleTestFlexible(){
 
         String string = "select * from employees, departments\n" +

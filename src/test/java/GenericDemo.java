@@ -1,7 +1,7 @@
 public class GenericDemo {
     public static void main(String[] args) {
         GenericData data = new GenericData(1,"chand");
-        GenericData data2 = new GenericData(2,"james");
+        GenericData data2 = new GenericData("2","james");
         System.out.println("key: "+data.getKey()+" Value: "+data.getValue());
         System.out.println("key: "+data2.getKey()+" Value: "+data2.getValue());
         data.display(2, new GenericData<>("string", 1));
