@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 public class GenericMethod {
     public static void main(String[] args) {
@@ -7,6 +9,8 @@ public class GenericMethod {
         list.add(1);
         list.add(2);
         list.add(3);
+        SortedSet set = new TreeSet<>();
+        set.addAll(list);
         DBA dba = new DBA();
         dba.printListData(list);
     }
@@ -21,5 +25,8 @@ class DBA{
         for (E arrayDatum : arrayData) {
             System.out.println(arrayDatum);
         }
+    }
+
+    public void printListData(SortedSet set) {
     }
 }
